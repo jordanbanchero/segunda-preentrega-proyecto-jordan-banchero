@@ -1,0 +1,109 @@
+// Navegacion final 
+
+.navegacionfinal {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+
+    .icononav {
+    width: 50px;
+    height: 50px;
+    }
+}
+
+// Footer
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    
+}
+
+.container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'Bebas Neue', cursive;
+    
+    .box__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        .logo img {
+            width: 150px;
+        }
+        .terms {
+            max-width: 320px;
+            margin-top: 20px;
+            font-weight: 500;
+            color: $color-princ;
+            font-size: 18px;
+        }
+        h3 {
+            margin-bottom: 30px;
+            color: $color-princ;
+            font-weight: 700;
+        }
+        a {
+            margin-top: 10px;
+            color: $color-princ;
+            .fa-brands {
+                font-size: 20px;
+            }    
+        }
+    }
+    
+}
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+
+    p {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    }
+    hr {
+    border: none;
+    height: 1px;
+    background-color: $color-princ;
+    }
+    .boton-final {
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+// Preguntas frecuentes
+@mixin info-extra {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 3%;
+    width: 95%;
+}
+.preguntas {
+    @include info-extra;
+}
+
+//Consignacion 
+
+.consignacion {
+    @include info-extra;
+}
+
+// Politicas 
+
+.politicas {
+    @include info-extra;
+}
+.politicaspriv {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 1%;
+    width: 98%;
+}

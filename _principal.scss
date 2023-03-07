@@ -1,0 +1,219 @@
+//Categorias
+
+.grid_categorias { 
+    margin-left: 20%;
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 60%;
+    height: 900px;
+
+    .enlace {
+        text-decoration: none;
+        color: none;
+    }
+}
+.div_titulo {
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 0 0 8px rgba(189, 9, 9, 0.8);
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+//Mapa
+$img-principal: (
+    indumentaria: "../image/indumentaria1.jpg",
+    calzado: "../img/calzado.jfif",
+    marcas: "../img/marcas.jfif",
+    accesorios: "../img/accesorios.jpeg"
+);
+@each $name, $img in $img-principal {
+    .h2__#{$name} {
+        background-image: url($img);
+    }
+}
+
+.h2__indumentaria {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2__calzado {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .h2__marcas {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .h2__accesorios {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Productos Destacados
+
+.product-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    padding-left: 30%;
+    padding-bottom: 1rem;
+
+    h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: white;
+    }
+    .letra-carousel {
+    color: $color-princ;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgba(189, 9, 9, 0.8);
+    }
+}
+
+//Contacto
+
+.section__contacto{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-height: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+
+    .contenedor__titulo{
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        span{
+            color: #b70e21;
+        }
+
+    }
+
+}
+
+.contact-formulario{
+    box-shadow: 0 0 20px 0 rgba(157, 140, 140, 0.3);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contact-form{
+    background-color:black;
+    padding: 2em;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .block { 
+            grid-column: 1 / 3  ;
+        }
+        p {
+            margin: 0;
+            padding: 1rem;
+            font-size: 20px;
+        }
+        button {
+            background: #b70e21;
+            border: 0;
+            text-transform: uppercase;
+            padding: 1rem;
+        }
+    }
+    h3 {
+        font-size: 22px;
+    }
+    & form button:hover,
+    & form button:focus {
+        background: #d63031;
+        color: #000;
+        transition: background-color 1s ease-out;
+        outline: 0;
+    }
+    & form button,
+    & form input,
+    & form textarea{
+        width: 100%;
+        padding: .7rem;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #d63031;
+        outline: none;
+        color: $color-princ;
+    }
+}
+
+.contact-info{
+    background-color:#0d0d0d ;
+
+    h3 {
+        text-align: start;
+        margin: 0 0 1rem;
+        padding: 1em;
+        font-size: 20px;
+    }
+    ul {
+        text-align: start;
+        margin: 0 0 1rem;
+        padding: 1em;
+        font-size: 20px;
+        list-style-type: none;
+
+        li {
+            padding: .3em;
+        }
+    }
+    p {
+        text-align: start;
+        margin: 0 0 1rem;
+        padding: 1em;
+        font-size: 20px;
+    }
+}
+
+.tamañomapa {
+    width: auto;
+}

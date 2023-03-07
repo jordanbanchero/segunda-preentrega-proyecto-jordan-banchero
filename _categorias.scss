@@ -1,0 +1,217 @@
+// Indumentaria
+
+.titulo2 {
+    margin-top: 50px;
+    font-size: 55px;
+    font-family: 'Bebas Neue', cursive;
+    color: $color-princ;
+    display: flex;
+    justify-content: center;
+}
+
+.section1 {  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+    gap: 10px;
+
+    .imgsection1 {
+        height: 300px;
+        width: 300px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+    }
+    p {
+        font-size: 22px;
+    }
+}
+
+// Tablas
+
+.tablas {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: $color-princ;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 90px;
+    margin-top: 50px;
+}
+table {
+    box-shadow:0 0 20px 0 rgba(157, 140, 140, 0.3) ;
+    background-color: black;
+    border-color: #b70e21;
+    width: 370px;
+    height: 200px;
+}
+
+
+
+
+// Calzado
+
+.section1-2 {  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    gap: 10px;
+
+    .imgsection1-2 {
+        height: auto;
+        width: 300px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+    }
+    p {
+        font-size: 22px;
+    }
+}
+
+
+// Accesorios 
+
+.sectionaccesorios {  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    gap: 10px;
+
+    .imgsectacc{
+        height: auto;
+        width: 300px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+//Marcas
+
+.navegacion-marcas {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 3%;
+
+    li {
+        display: inline-block;
+        a {
+        color: black;
+        font-weight: 590;
+        text-decoration: none;
+        padding: 0 10px;
+        display: block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px; 
+        &:hover {
+        background: rgb(168, 5, 5);
+        color: $color-princ;
+        }
+        }
+    }
+}
+
+
+.section-marcas {  
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+    gap: 10px;
+
+    p {
+        font-size: 20px;
+    }
+}
+.img-marcas {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+.section-drew {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.section-vlone{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+
+    gap: 10px;
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.section-supreme{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+
+    gap: 10px;
+
+    p {
+        font-size: 22px;
+    }
+    
+}
+
+
+.section-jordan{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+
+    gap: 10px;
+
+    p {
+        font-size: 22px;
+    }
+}

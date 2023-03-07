@@ -1,0 +1,454 @@
+// Medias Squares
+
+@media screen and (min-width:320px) {
+    @mixin template-columns-cel {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 3%;
+    }
+    %font-mobile {
+        font-size: 16px;
+    }
+    .banner-text {
+        margin-left: 2%;
+        h1 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+    }
+    .navegador {
+        li {
+            a {
+                margin-top: 0px;
+            }
+        }
+    }
+    .contact-formulario{
+        box-shadow:0 0 20px 0 rgba(255, 255, 255, .3) ;
+        padding: 1em;
+        display: block;
+    }
+
+    .contact-info  {
+        h4 {
+            text-align: center;
+        }
+        p { 
+            text-align: center;
+        }
+        ul {
+            text-align: center;
+        }
+        
+    }
+    .contact-form  {
+        form {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+    .grid_categorias {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 60%;
+        height: auto;
+
+        .div_titulo {
+            height: 300px;
+            font-size: 30px;
+        }
+    }
+    
+    .product-desc {
+        width: 85%;
+        padding-left: 15%;
+
+        .tituloprod {
+            margin-top: 100px;
+            font-size: 25px;
+        }
+        .letra-carousel {
+            font-size: 15px;
+        }
+    }
+    .contenedor {
+        max-width: 350px;
+    }
+    .tamañomapa {
+        width: 150px;
+    }
+    .contenedor__titulo {
+        font-size: 2rem;
+    }
+    .titulo2-2 {
+        font-size: 38px;
+    }
+    .preguntas {
+        @extend %font-mobile;
+    }
+    .politicaspriv {
+        font-size: 14px;
+    }
+    .politicas {
+        @extend %font-mobile;
+    }
+    .consignacion {
+        @extend %font-mobile;
+    }
+    .nosotros {
+        @extend %font-mobile;
+    }
+    .local {
+        width: 250px; 
+
+        .titulolocal {
+            font-size: 35px;
+        }
+    }
+    .contacto {
+        @extend %font-mobile;
+    }
+    .comprar {
+        @extend %font-mobile;
+    }
+    .titulo2 {
+        font-size: 32px;
+    }
+    .section1 {
+        @include template-columns-cel;
+    }
+    table {
+        width: 300px;
+    }
+    .section1-2 {
+        @include template-columns-cel;
+    }
+    .sectionaccesorios {
+        @include template-columns-cel;
+    }
+    .section-marcas {
+        @include template-columns-cel;
+        margin-top: 20px;
+    }
+    .section-supreme {
+        @include template-columns-cel;
+        margin-top: 20px;
+    }
+    .section-drew {
+        @include template-columns-cel;
+        margin-top: 20px;
+    }
+    .section-vlone {
+        @include template-columns-cel;
+        margin-top: 20px;
+    }
+    .section-jordan {
+        @include template-columns-cel;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:375px) {
+    @mixin template-margin-cel {
+        margin-left: 9%;
+    }
+    table {
+        width: 370px;
+    }
+    .section1 {
+        @include template-margin-cel;
+    }
+    .section1-2 {
+        @include template-margin-cel;
+    }
+    .sectionaccesorios {
+        @include template-margin-cel;
+    }
+    .section-marcas {
+        @include template-margin-cel;
+    }
+    .section-supreme {
+        @include template-margin-cel;
+    }
+    .section-drew {
+        @include template-margin-cel;
+    }
+    .section-vlone {
+        @include template-margin-cel;
+    }
+    .section-jordan {
+        @include template-margin-cel;
+    }
+}
+
+@media screen and (min-width:768px) {
+    @mixin template-colums-tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    %font-tablet {
+        font-size: 20px;
+    }
+    .banner-text  {
+        margin-left: 20%;
+        h1 {
+            font-size:35px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .navegador {
+        li {
+            a {
+                margin-top: 130px;
+            }
+        }
+    }
+
+    .contact-info  {
+        p {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        ul {
+            text-align: center;
+        }
+    }
+    .grid_categorias {
+        margin-left: 20%;
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        width: 60%;
+        height: 600px;
+
+        .div_titulo {
+            font-size: 48px;
+            height: 100%;
+        }
+    }
+    .product-desc {
+        width: 75%;
+        padding-left: 25%;
+
+        .tituloprod {
+            margin-top: 100px;
+            font-size: 50px;
+        }
+        .letra-carousel {
+            font-size: 28px;
+        }
+    }
+    .contenedor {
+        max-width: 1170px;
+    }
+    .tamañomapa {
+        width: auto;
+    }
+    .contenedor__titulo {
+        font-size: 4rem;
+    }
+    .preguntas {
+        @extend %font-tablet;
+    }
+    .politicaspriv {
+        font-size: 18px;
+    }
+    .titulo2-2 {
+        font-size: 50px;
+    }
+    .politicas {
+        @extend %font-tablet;
+    }
+    .consignacion {
+        @extend %font-tablet;
+    }
+    .nosotros {
+        @extend %font-tablet;
+    }
+    .local {
+        width: 600px; 
+    }
+    .titulolocal {
+        font-size: 45px;
+    }
+    .contacto {
+        @extend %font-tablet;
+    }
+    .comprar {
+        @extend %font-tablet;
+    }
+    .titulo2 {
+        font-size: 45px;
+    }
+    .section1 {
+        @include template-colums-tablet;
+    }
+    .section1-2 {
+        @include template-colums-tablet;
+    }
+    .sectionaccesorios {
+        @include template-colums-tablet;
+    }
+    .section-marcas {
+        @include template-colums-tablet;
+    }
+    .section-supreme {
+        @include template-colums-tablet;
+    }
+    .section-drew {
+        @include template-colums-tablet;
+    }
+    .section-vlone {
+        @include template-colums-tablet;
+    }
+    .section-jordan {
+        @include template-colums-tablet;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    @mixin template-colums {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 5%;
+    }
+    .banner-text {
+        margin-left: 25%;
+        h1 {
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 35px;
+        }
+    }
+    .grid_categorias {
+        height: 900px;
+    }
+    .product-desc {
+        width: 70%;
+        padding-left: 30%;
+    }
+    
+    .contact-formulario {
+        display: grid;
+    }
+
+    .contact-info {
+        p {
+            text-align: start;
+        }
+        h4 {
+            text-align: start;
+        }
+        ul {
+            text-align: start;
+        }
+    }
+    .contact-form {
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .block { 
+                grid-column: 1 / 3  ;
+            }
+        }
+    }
+
+    .section1 {
+        @include template-colums;
+    }
+    .section1-2 {
+        @include template-colums;
+    }
+    .sectionaccesorios {
+        @include template-colums;
+    }
+    .section-marcas {
+        @include template-colums;
+    }
+    .section-vlone {
+        @include template-colums;
+    }
+    .section-drew {
+        @include template-colums;
+    }
+    .section-supreme {
+        @include template-colums;
+    }
+    .section-jordan {
+        @include template-colums;
+    }
+} 
+
+
+@media screen and (min-width:1366px) {
+    @mixin template-margin-compu {
+        margin-left: 10%;
+    }
+    .section1 {
+        @include template-margin-compu;
+    }
+    .section1-2 {
+        @include template-margin-compu;
+    }
+    .sectionaccesorios {
+        @include template-margin-compu;
+    }
+    .section-marcas {
+        @include template-margin-compu;
+    }
+    .section-vlone {
+        @include template-margin-compu;
+    }
+    .section-drew {
+        @include template-margin-compu;
+    }
+    .section-supreme {
+        @include template-margin-compu;
+    }
+    .section-jordan {
+        @include template-margin-compu;
+    }
+}
+
+@media screen and (min-width:1650px) {
+    .grid_categorias {
+        height: 1200px;
+    }
+    .product-desc {
+        width: 65%;
+        padding-left: 35%;
+        
+    }
+    .img-marcas {
+        width: 400px;
+    }
+    .section1 {
+        .imgsection1 {
+            width: 400px;
+        }
+    }
+    .section1-2 {
+        .imgsection1-2 {
+            width: 400px;
+        }
+    }
+    .sectionaccesorios {
+        .imgsectacc {
+            width: 400px;
+        }
+    }
+    .lanzamientos {
+        display: flex;
+        justify-content: center;
+        padding-left: 10%;
+        width: 90%;
+    }
+
+}

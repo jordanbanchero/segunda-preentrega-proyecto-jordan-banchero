@@ -1,0 +1,135 @@
+// Proximos Lanzamientos
+
+.lanzamientos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .card {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        margin: 40px;
+        
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 0px ;
+            overflow: hidden;
+            transition: 1s;
+        }
+        .front {
+            transform: perspective(500px) rotateY(0deg);
+            box-shadow: 0 10px 10px #000;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            h3 {
+                font-size: 30px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 35px;
+                line-height: 45px;
+                color: $color-princ;
+                background: black;
+                text-align: center;
+            }
+        }
+        .back {
+            transform: perspective(500px) rotateY(180deg);
+            background: rgb(248, 8, 8);
+            padding: 15px;
+            color: $color-princ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            box-shadow: 0 5px 10px #000;
+
+            .link {
+                border-top: solid 1px $color-princ;
+                height: 50px;
+                line-height: 50px;
+
+                a {
+                    color: $color-princ;
+                }
+            }
+            h3 {
+                margin-top: 20px;
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+            p {
+                letter-spacing: 1px;
+            }
+        }
+        &:hover .front {
+            transform: perspective(500px) rotateY(180deg);
+        }
+        &:hover .back {
+            transform: perspective(500px) rotateY(360deg);
+        }
+    }
+}
+
+
+// Seccion Nosotros
+.nosotros {
+    margin-top: 60px;
+    margin-left: 3%;
+    font-size: 20px;
+    width: 95%;
+    .titulo2-2 {
+        font-size: 50px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+// Seccion Showroom
+
+.local {
+    width: 600px;
+
+    p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px; 
+    }
+    a {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px; 
+    }
+}
+.titulolocal {
+    font-size: 45px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center
+}
+.imglocal2 {
+    width: 100%;
+    height: 200px;
+}
+.imglocal1 {
+    width: 100%;
+    height: 200px;
+}
+
+/* Seccion Contacto */
+.contacto {
+    font-size: 20px;
+    margin-left:3%;
+    margin-top: 60px;
+}
